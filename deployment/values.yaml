@@ -1,0 +1,16 @@
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+ingress:
+  enabled: true
+  className: ""
+  annotations: 
+    kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: aurora.kejun.cc
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
