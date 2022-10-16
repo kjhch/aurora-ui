@@ -1,3 +1,6 @@
+nameOverride: "aurora-ui"
+fullnameOverride: "aurora-ui"
+
 service:
   type: ClusterIP
   port: 80
